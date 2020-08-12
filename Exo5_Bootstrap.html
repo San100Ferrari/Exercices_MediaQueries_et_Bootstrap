@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>bootstrap 5</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+    <body>
+        
+        
+        <nav class="bg-dark d-flex justify-content-center">
+            <ul class="nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Accueil</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">A propos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Nous contacter</a>
+                </li>
+              </ul>
+        </nav>
+        <h3>Nav Verticale à gauche</h3>
+        <nav class="nav flex-column bg-secondary col-2">
+            <a class="nav-link text-white" href="#">Accueil</a>
+            <a class="nav-link text-white" href="#">A propos</a>
+            <a class="nav-link text-white" href="#">Nous contacter</a>
+          </nav>
+        <h3>Nav avec contenu</h3>
+        <!--<nav class="nav flex-column bg-secondary col-2">
+            <a class="nav-link text-white" href="#">Accueil</a>
+            <a class="nav-link active text-white" href="#A">A propos</a>
+            <a class="nav-link text-white" href="#">Nous contacter</a>
+        </nav>-->
+        <!--<div class="nav flex-column nav-pills col-2 bg-secondary" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+            <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Home</a>
+            <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Profile</a>
+            <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Messages</a>
+            <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Settings</a>
+          </div>
+          <div class="tab-content" id="v-pills-tabContent">
+            <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">...</div>
+            <div class="tab-pane fade offset-2" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit, aut, impedit quasi maiores, modi iusto perspiciatis harum veniam corrupti molestias veritatis asperiores totam quidem ex sed saepe obcaecati enim cumque?</p>
+            </div>
+            <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">...</div>
+            <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">...</div>
+          </div>-->
+          <!--<nav class="nav flex-column bg-secondary col-2">
+            <a class="nav-link text-white" href="#">Accueil</a>
+            <a class="nav-link text-white  id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false"" href="#">A propos</a>
+            <a class="nav-link text-white" href="#">Nous contacter</a>
+          </nav>
+        <div class="tab-content" id="v-pills-tabContent"></div>
+            <div class="tab-pane fade offset-2" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit, aut, impedit quasi maiores, modi iusto perspiciatis harum veniam corrupti molestias veritatis asperiores totam quidem ex sed saepe obcaecati enim cumque?</p>
+            </div>
+        </div>-->
+    <div class="row">
+        <div class="nav flex-column nav-pills col-2 bg-secondary" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+            <a class="nav-link" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home">Accueil</a>
+            <a class="nav-link" id="v-pills-about-tab" data-toggle="pill" href="#v-pills-about">A propos</a>
+            <a class="nav-link" id="v-pills-contact-tab" data-toggle="pill" href="#v-pills-contact">Nous contacter</a>
+          </div>
+          <div class="tab-content col-10" id="v-pills-tabContent">
+            <div class="tab-pane fade show active" id="v-pills-home"></div>
+            <div class="tab-pane fade" id="v-pills-about">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat illum quia neque similique quo laudantium nam, minima temporibus? Error ut quibusdam ab nisi perferendis quod iusto beatae, maxime asperiores pariatur?</p>
+            </div>
+            <div class="tab-pane fade" id="v-pills-contact"></div>
+          </div>
+    </div>
+    </body>
+</html>
+<!--# Bootstrap 5 : les navbars
+
+Pour cet exercice, vous aller devoir créer 3 navbars :
+- une navbar horizontale : celle ci contiendra 3 éléments centrés (Accueil, a propos et nous contacter).
+- une navbar verticale : Celle ci fera 2 colonnes de large(par rapport à la page) avec les mêmes éléments que précédemment
+- une navbar verticale avec contenu : cette navbar permet d'afficher différents éléments textes (regardez sur la documentation au niveau des navs dans le chapitre 
+javascript behavior)
+
+Vous avez un exemple de rendu sur l'image bootstrap5.png .-->
