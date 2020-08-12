@@ -1,0 +1,15 @@
+.bg-jumb-main {
+    background: url('images/jumbo.jpg') no-repeat center center;
+}
+.bg-jumb-inter {
+    background: url('images/jumbo-inter.jpg') no-repeat center center;
+    color: white;
+}
+.jumbotron {
+    background-image:url(images/jumbo.jpg);
+    height: 300px;
+}
+main + .jumbotron {
+    background-image:url(images/jumbo-inter.jpg);
+    height: 300px;
+}
