@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bootstrap 8</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.min.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+    <body>
+        
+<!--Premier exo-->
+        <div class="text-center h-1">
+            Collapse
+        </div>
+        <div class="row col-12 text-center">
+            
+            <div class="col-4">
+                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample1" aria-expanded="false" aria-controls="multiCollapseExample2">Premier</button>
+                <div class="col">
+                    <div class="collapse multi-collapse" id="multiCollapseExample1">
+                        <div class="card card-body">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae totam, quia culpa magni animi eos eligendi similique, quaerat odio quam aperiam debitis rerum ab itaque sunt enim maiores molestias voluptate?
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-4">
+                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Deuxième</button>
+                <div class="col">
+                    <div class="collapse multi-collapse" id="multiCollapseExample2">
+                        <div class="card card-body">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae totam, quia culpa magni animi eos eligendi similique, quaerat odio quam aperiam debitis rerum ab itaque sunt enim maiores molestias voluptate?
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-4">
+                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample3" aria-expanded="false" aria-controls="multiCollapseExample2">Troisième</button>
+                <div class="col">
+                    <div class="collapse multi-collapse" id="multiCollapseExample3">
+                        <div class="card card-body">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae totam, quia culpa magni animi eos eligendi similique, quaerat odio quam aperiam debitis rerum ab itaque sunt enim maiores molestias voluptate?
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+
+<!--Deuxième exo-->
+        <div class="text-center h-1">
+            Acoordéon
+        </div>
+        <div>
+
+            <div class="accordion" id="accordionExample">
+                
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Premier
+                            </button>
+                        </h2>
+                    </div>
+                
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <div clas="card-body">
+                            1.Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quam, assumenda cumque molestiae laborum tempore! Libero, magnam voluptas omnis cum vel ipsa, beatae magni quisquam saepe voluptatem tempora totam necessitatibus?
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                Deuxième
+                            </button>
+                        </h2>
+                    </div>
+                
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                        <div clas="card-body">
+                            2.Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quam, assumenda cumque molestiae laborum tempore! Libero, magnam voluptas omnis cum vel ipsa, beatae magni quisquam saepe voluptatem tempora totam necessitatibus?
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                Troisième
+                            </button>
+                        </h2>
+                    </div>
+                
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                        <div clas="card-body">
+                            3.Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quam, assumenda cumque molestiae laborum tempore! Libero, magnam voluptas omnis cum vel ipsa, beatae magni quisquam saepe voluptatem tempora totam necessitatibus?
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+
+        </div>
+
+<!-- Troisième exo-->
+        <div class="text-center">
+            Collapse et fermetures (utiliser data-parent)
+        </div>
+        <div id="boutonCollapse">
+        <div class="row text-center">
+
+            <div class="card col-4">
+                <div class="btn btn-link bg-dark text-danger" type="button" data-toggle="collapse" data-target="#collapseNbOne" aria-expanded="true" aria-controls="collapseNbOne">
+                    PremierNb
+                    <div class="col">
+                        <div class="collapse multi-collapse" data-parent="#boutonCollapse" id="collapseNbOne">
+                            <div class="card card-body">
+                                1.Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita nisi laudantium ducimus autem nam numquam dolor dolores consectetur. Distinctio illo cum nisi porro velit excepturi. Quasi tenetur molestias suscipit nam.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card col-4">
+                <div class="btn btn-link bg-dark text-danger" type="button" data-toggle="collapse" data-target="#collapseNbTwo" aria-expanded="true" aria-controls="collapseNbTwo">
+                    DeuxièmeNb
+                    <div class="col">
+                        <div class="collapse multi-collapse" data-parent="#boutonCollapse" id="collapseNbTwo">
+                            <div class="card card-body">
+                                2.Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita nisi laudantium ducimus autem nam numquam dolor dolores consectetur. Distinctio illo cum nisi porro velit excepturi. Quasi tenetur molestias suscipit nam.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card col-4">
+                <div class="btn btn-link bg-dark text-danger" type="button" data-toggle="collapse" data-target="#collapseNbThree" aria-expanded="true" aria-controls="collapseNbThree">
+                    TroisièmeNb
+                    <div class="col">
+                        <div class="collapse multi-collapse" data-parent="#boutonCollapse" id="collapseNbThree">
+                            <div class="card card-body">
+                                3.Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita nisi laudantium ducimus autem nam numquam dolor dolores consectetur. Distinctio illo cum nisi porro velit excepturi. Quasi tenetur molestias suscipit nam.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        </div>
+
+    </body>
+</html>
+<!--# Bootstrap 8 : Collapse et accordeon
+
+Bootstrap fourni une possibilité de créer des éléments déroulants simplement :
+les collapes.
+
+En utilisant la documentation, vous allez créer 3 mini-exercices :
+
+Premier :
+    Créez 3 éléments de 4 colonnes chacun avec un bouton au dessus(voir bootstrap8-1.png).Chaque bouton déroule/réenroule le texte présent dessous.
+
+Deuxieme :
+    Créez Accordéon de 3 éléments qui se dérouleront au clic(voir bootstap-2.png).
+
+Troisieme :
+    Mixez les 2 exercices précédents : La présentation ressemblera au premier exercice mais lorsque l'un des boutons sera cliqué, les autres éléments se 
+    replieront s'ils sont dépliés.(un seul élément pourra être déplié à la fois)  (data-parent est votre ami)  
+-->
